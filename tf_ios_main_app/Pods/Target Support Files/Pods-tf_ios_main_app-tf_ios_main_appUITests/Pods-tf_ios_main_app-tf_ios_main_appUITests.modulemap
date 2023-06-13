@@ -1,0 +1,6 @@
+framework module Pods_tf_ios_main_app_tf_ios_main_appUITests {
+  umbrella header "Pods-tf_ios_main_app-tf_ios_main_appUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

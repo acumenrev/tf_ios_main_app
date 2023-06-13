@@ -1,0 +1,15 @@
+//
+//  dev-config.xcconfig
+//  tf_ios_main_app
+//
+//  Created by AL-TVO163 on 13/06/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "app-config/base-config.xcconfig"
+#include "Pods/Target Support Files/Pods-tf_ios_main_app/Pods-tf_ios_main_app.debug.xcconfig"
+
+ 
+API_URL=$(inherited)-abv
