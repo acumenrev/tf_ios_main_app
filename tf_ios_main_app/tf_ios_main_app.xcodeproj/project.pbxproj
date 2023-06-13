@@ -21,6 +21,7 @@
 		7BC8BE8B2A3854C80062FA88 /* base-config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7BC8BE8A2A3854C80062FA88 /* base-config.xcconfig */; };
 		7BC8BE8D2A3855060062FA88 /* dev-config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7BC8BE8C2A3855060062FA88 /* dev-config.xcconfig */; };
 		7BC8BE8F2A3855AE0062FA88 /* TFAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8BE8E2A3855AE0062FA88 /* TFAppConfig.swift */; };
+		7BC8BE952A385B270062FA88 /* secure-config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7BC8BE942A385B270062FA88 /* secure-config.xcconfig */; };
 		E2D02FD4818A7FC23D6BD542 /* Pods_tf_ios_main_app_tf_ios_main_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB3772BABFBE10D4564F5E5 /* Pods_tf_ios_main_app_tf_ios_main_appUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		7BC8BE8A2A3854C80062FA88 /* base-config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "base-config.xcconfig"; sourceTree = "<group>"; };
 		7BC8BE8C2A3855060062FA88 /* dev-config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "dev-config.xcconfig"; sourceTree = "<group>"; };
 		7BC8BE8E2A3855AE0062FA88 /* TFAppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFAppConfig.swift; sourceTree = "<group>"; };
+		7BC8BE942A385B270062FA88 /* secure-config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "secure-config.xcconfig"; sourceTree = "<group>"; };
 		A3BE5FF86D83A5706E1D9D5A /* Pods-tf_ios_main_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tf_ios_main_appTests.release.xcconfig"; path = "Target Support Files/Pods-tf_ios_main_appTests/Pods-tf_ios_main_appTests.release.xcconfig"; sourceTree = "<group>"; };
 		BBB006F22D1AE237D95D2BCA /* Pods-tf_ios_main_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tf_ios_main_app.release.xcconfig"; path = "Target Support Files/Pods-tf_ios_main_app/Pods-tf_ios_main_app.release.xcconfig"; sourceTree = "<group>"; };
 		DD146FD51B4D4F8FE8C21215 /* Pods-tf_ios_main_app-tf_ios_main_appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tf_ios_main_app-tf_ios_main_appUITests.release.xcconfig"; path = "Target Support Files/Pods-tf_ios_main_app-tf_ios_main_appUITests/Pods-tf_ios_main_app-tf_ios_main_appUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		7BC8BE4D2A3853650062FA88 = {
 			isa = PBXGroup;
 			children = (
+				7BC8BE932A385B270062FA88 /* secure-config */,
 				7BC8BE892A3854920062FA88 /* app-config */,
 				7BC8BE582A3853650062FA88 /* tf_ios_main_app */,
 				7BC8BE6F2A3853670062FA88 /* tf_ios_main_appTests */,
@@ -182,6 +185,14 @@
 				7BC8BE8C2A3855060062FA88 /* dev-config.xcconfig */,
 			);
 			path = "app-config";
+			sourceTree = "<group>";
+		};
+		7BC8BE932A385B270062FA88 /* secure-config */ = {
+			isa = PBXGroup;
+			children = (
+				7BC8BE942A385B270062FA88 /* secure-config.xcconfig */,
+			);
+			path = "secure-config";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 				7BC8BE662A3853670062FA88 /* LaunchScreen.storyboard in Resources */,
 				7BC8BE8B2A3854C80062FA88 /* base-config.xcconfig in Resources */,
 				7BC8BE632A3853670062FA88 /* Assets.xcassets in Resources */,
+				7BC8BE952A385B270062FA88 /* secure-config.xcconfig in Resources */,
 				7BC8BE8D2A3855060062FA88 /* dev-config.xcconfig in Resources */,
 				7BC8BE612A3853650062FA88 /* Main.storyboard in Resources */,
 			);

@@ -22,16 +22,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVa-O4-i2I">
+                                <rect key="frame" x="10" y="478.66666666666669" width="373" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="66o-4W-s7F" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0uc-I9-7tJ"/>
+                            <constraint firstItem="tVa-O4-i2I" firstAttribute="trailing" secondItem="66o-4W-s7F" secondAttribute="trailing" id="Dcs-3l-J8v"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="66o-4W-s7F" secondAttribute="trailing" constant="10" id="UYk-Uq-iTe"/>
+                            <constraint firstItem="tVa-O4-i2I" firstAttribute="leading" secondItem="66o-4W-s7F" secondAttribute="leading" id="d6A-2s-DY6"/>
+                            <constraint firstItem="tVa-O4-i2I" firstAttribute="top" secondItem="66o-4W-s7F" secondAttribute="bottom" constant="30" id="fEs-K7-sl5"/>
                             <constraint firstItem="66o-4W-s7F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="r2N-Um-Puu"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lblApiKey" destination="tVa-O4-i2I" id="NGx-Fx-BNL"/>
                         <outlet property="lblCenter" destination="66o-4W-s7F" id="UdE-BC-jrR"/>
                     </connections>
                 </viewController>

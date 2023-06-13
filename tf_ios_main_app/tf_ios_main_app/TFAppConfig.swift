@@ -15,6 +15,7 @@ class TFAppCofig {
     static private let keyAMPConfig = "App_Configuration"
     enum ConfigKey: String {
         case apiUrl = "API_URL"
+        case apiKey = "API_KEY"
     }
 
 

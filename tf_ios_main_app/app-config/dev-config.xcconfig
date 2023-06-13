@@ -10,6 +10,6 @@
 
 #include "app-config/base-config.xcconfig"
 #include "Pods/Target Support Files/Pods-tf_ios_main_app/Pods-tf_ios_main_app.debug.xcconfig"
-
+#include "secure-config/secure-config.xcconfig"
  
 API_URL=$(inherited)-abv
