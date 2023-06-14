@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "tf_ios_analytics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/acumenrev/tf_ios_analytics",
+      "state" : {
+        "branch" : "master",
+        "revision" : "fc2febc6cbe1197aeb4d988698af6a3688121f60"
+      }
+    }
+  ],
+  "version" : 2
+}

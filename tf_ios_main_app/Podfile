@@ -5,7 +5,10 @@ target 'tf_ios_main_app' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  
   # Pods for tf_ios_main_app
+  
+  pod 'TFAnalytics' , git: 'https://github.com/acumenrev/tf_ios_analytics'
 
   target 'tf_ios_main_appTests' do
     inherit! :search_paths

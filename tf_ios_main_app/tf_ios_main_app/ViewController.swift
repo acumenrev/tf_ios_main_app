@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import TFAnalytic
 
 class ViewController: UIViewController {
     
@@ -19,9 +20,12 @@ class ViewController: UIViewController {
         
         let apiUrl = TFAppCofig.getConfigValue(key: .apiUrl)
         
-        lblCenter.text = apiUrl
+        let manager = TFAnalyticManager()
+        
+        lblCenter.text = manager.getMessage()
         
         lblApiKey.text = TFAppCofig.getConfigValue(key: .apiKey)
+    
     }
 
 

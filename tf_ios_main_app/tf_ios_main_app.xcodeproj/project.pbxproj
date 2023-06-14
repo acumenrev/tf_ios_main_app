@@ -22,6 +22,7 @@
 		7BC8BE8D2A3855060062FA88 /* dev-config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7BC8BE8C2A3855060062FA88 /* dev-config.xcconfig */; };
 		7BC8BE8F2A3855AE0062FA88 /* TFAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8BE8E2A3855AE0062FA88 /* TFAppConfig.swift */; };
 		7BC8BE952A385B270062FA88 /* secure-config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7BC8BE942A385B270062FA88 /* secure-config.xcconfig */; };
+		7BF93EA42A39710E007ECDEF /* TFAnalytic in Frameworks */ = {isa = PBXBuildFile; productRef = 7BF93EA32A39710E007ECDEF /* TFAnalytic */; };
 		E2D02FD4818A7FC23D6BD542 /* Pods_tf_ios_main_app_tf_ios_main_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB3772BABFBE10D4564F5E5 /* Pods_tf_ios_main_app_tf_ios_main_appUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27982CBAC180C19CE7E0E103 /* Pods_tf_ios_main_app.framework in Frameworks */,
+				7BF93EA42A39710E007ECDEF /* TFAnalytic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +214,9 @@
 			dependencies = (
 			);
 			name = tf_ios_main_app;
+			packageProductDependencies = (
+				7BF93EA32A39710E007ECDEF /* TFAnalytic */,
+			);
 			productName = tf_ios_main_app;
 			productReference = 7BC8BE562A3853650062FA88 /* tf_ios_main_app.app */;
 			productType = "com.apple.product-type.application";
@@ -286,6 +291,9 @@
 				Base,
 			);
 			mainGroup = 7BC8BE4D2A3853650062FA88;
+			packageReferences = (
+				7B4EC4C92A3969EC008CFDA4 /* XCRemoteSwiftPackageReference "tf_ios_analytics" */,
+			);
 			productRefGroup = 7BC8BE572A3853650062FA88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -746,6 +754,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7B4EC4C92A3969EC008CFDA4 /* XCRemoteSwiftPackageReference "tf_ios_analytics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/acumenrev/tf_ios_analytics";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7BF93EA32A39710E007ECDEF /* TFAnalytic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B4EC4C92A3969EC008CFDA4 /* XCRemoteSwiftPackageReference "tf_ios_analytics" */;
+			productName = TFAnalytic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7BC8BE4E2A3853650062FA88 /* Project object */;
 }
