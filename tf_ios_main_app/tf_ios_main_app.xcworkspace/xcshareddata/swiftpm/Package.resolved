@@ -1,12 +1,93 @@
 {
   "pins" : [
     {
+      "identity" : "purelayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PureLayout/PureLayout",
+      "state" : {
+        "revision" : "5561683c96dc49b023c1299bfe4f6fbeed5f8199",
+        "version" : "3.1.9"
+      }
+    },
+    {
+      "identity" : "reusable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AliSoftware/Reusable.git",
+      "state" : {
+        "revision" : "18674709421360e210c2ecd4e8e08b217d4ea61d",
+        "version" : "4.1.2"
+      }
+    },
+    {
+      "identity" : "rxflow",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RxSwiftCommunity/RxFlow.git",
+      "state" : {
+        "revision" : "d8d4e53d05239f1ec1bd8bec173907868afa0fa1",
+        "version" : "2.13.0"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "9dcaa4b333db437b0fbfaf453fad29069044a8b4",
+        "version" : "6.6.0"
+      }
+    },
+    {
       "identity" : "tf_ios_analytics",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/acumenrev/tf_ios_analytics",
       "state" : {
         "branch" : "master",
         "revision" : "fc2febc6cbe1197aeb4d988698af6a3688121f60"
+      }
+    },
+    {
+      "identity" : "tf_ios_app_assets",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/acumenrev/tf_ios_app_assets",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f1b0b13112784834f848d1533d59777deae924b8"
+      }
+    },
+    {
+      "identity" : "tf_ios_app_flows",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/acumenrev/tf_ios_app_flows",
+      "state" : {
+        "branch" : "master",
+        "revision" : "5acd2d3284b4b752eea93502b2178188a5f92e70"
+      }
+    },
+    {
+      "identity" : "tf_ios_module_a",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/acumenrev/tf_ios_module_a",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e531e0e2175f9871a3551ea2553ff80fd7d325cd"
+      }
+    },
+    {
+      "identity" : "tf_ios_module_b",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/acumenrev/tf_ios_module_b",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6ccb437324864582ef104f76b3a59ef7ef3b8c31"
+      }
+    },
+    {
+      "identity" : "urlnavigator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/devxoul/URLNavigator",
+      "state" : {
+        "branch" : "master",
+        "revision" : "18ba61fd8022191c1be47b1ce845b7daa94a2924"
       }
     }
   ],

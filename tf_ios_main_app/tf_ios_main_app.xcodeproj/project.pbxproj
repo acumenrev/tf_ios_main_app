@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		27982CBAC180C19CE7E0E103 /* Pods_tf_ios_main_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74867D2CA2BD97C05EDAE348 /* Pods_tf_ios_main_app.framework */; };
 		766D236480C77ADB221AB6B0 /* Pods_tf_ios_main_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609E7FEBB188DFE4A1100091 /* Pods_tf_ios_main_appTests.framework */; };
+		7B4A737A2A417831000CBBB5 /* tf_ios_module_b in Frameworks */ = {isa = PBXBuildFile; productRef = 7B4A73792A417831000CBBB5 /* tf_ios_module_b */; };
+		7B4A737D2A41783B000CBBB5 /* tf_ios_app_flows in Frameworks */ = {isa = PBXBuildFile; productRef = 7B4A737C2A41783B000CBBB5 /* tf_ios_app_flows */; };
+		7B4A73802A417856000CBBB5 /* TFAssets in Frameworks */ = {isa = PBXBuildFile; productRef = 7B4A737F2A417856000CBBB5 /* TFAssets */; };
+		7B4A73832A417887000CBBB5 /* tf_ios_module_a in Frameworks */ = {isa = PBXBuildFile; productRef = 7B4A73822A417887000CBBB5 /* tf_ios_module_a */; };
+		7B4A73852A4179A4000CBBB5 /* AppDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A73842A4179A4000CBBB5 /* AppDirector.swift */; };
+		7B4A73872A418104000CBBB5 /* MainAppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A73862A418104000CBBB5 /* MainAppFlow.swift */; };
 		7BC8BE5A2A3853650062FA88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8BE592A3853650062FA88 /* AppDelegate.swift */; };
 		7BC8BE5C2A3853650062FA88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8BE5B2A3853650062FA88 /* SceneDelegate.swift */; };
 		7BC8BE5E2A3853650062FA88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8BE5D2A3853650062FA88 /* ViewController.swift */; };
@@ -48,6 +54,8 @@
 		609E7FEBB188DFE4A1100091 /* Pods_tf_ios_main_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tf_ios_main_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEEF7AF717703AFD6826233 /* Pods-tf_ios_main_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tf_ios_main_app.debug.xcconfig"; path = "Target Support Files/Pods-tf_ios_main_app/Pods-tf_ios_main_app.debug.xcconfig"; sourceTree = "<group>"; };
 		74867D2CA2BD97C05EDAE348 /* Pods_tf_ios_main_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tf_ios_main_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4A73842A4179A4000CBBB5 /* AppDirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDirector.swift; sourceTree = "<group>"; };
+		7B4A73862A418104000CBBB5 /* MainAppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppFlow.swift; sourceTree = "<group>"; };
 		7BC8BE562A3853650062FA88 /* tf_ios_main_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tf_ios_main_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC8BE592A3853650062FA88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BC8BE5B2A3853650062FA88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +85,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4A73832A417887000CBBB5 /* tf_ios_module_a in Frameworks */,
+				7B4A737A2A417831000CBBB5 /* tf_ios_module_b in Frameworks */,
+				7B4A73802A417856000CBBB5 /* TFAssets in Frameworks */,
 				27982CBAC180C19CE7E0E103 /* Pods_tf_ios_main_app.framework in Frameworks */,
+				7B4A737D2A41783B000CBBB5 /* tf_ios_app_flows in Frameworks */,
 				7BF93EA42A39710E007ECDEF /* TFAnalytic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +171,8 @@
 				7BC8BE642A3853670062FA88 /* LaunchScreen.storyboard */,
 				7BC8BE672A3853670062FA88 /* Info.plist */,
 				7BC8BE8E2A3855AE0062FA88 /* TFAppConfig.swift */,
+				7B4A73842A4179A4000CBBB5 /* AppDirector.swift */,
+				7B4A73862A418104000CBBB5 /* MainAppFlow.swift */,
 			);
 			path = tf_ios_main_app;
 			sourceTree = "<group>";
@@ -216,6 +230,10 @@
 			name = tf_ios_main_app;
 			packageProductDependencies = (
 				7BF93EA32A39710E007ECDEF /* TFAnalytic */,
+				7B4A73792A417831000CBBB5 /* tf_ios_module_b */,
+				7B4A737C2A41783B000CBBB5 /* tf_ios_app_flows */,
+				7B4A737F2A417856000CBBB5 /* TFAssets */,
+				7B4A73822A417887000CBBB5 /* tf_ios_module_a */,
 			);
 			productName = tf_ios_main_app;
 			productReference = 7BC8BE562A3853650062FA88 /* tf_ios_main_app.app */;
@@ -293,6 +311,10 @@
 			mainGroup = 7BC8BE4D2A3853650062FA88;
 			packageReferences = (
 				7B4EC4C92A3969EC008CFDA4 /* XCRemoteSwiftPackageReference "tf_ios_analytics" */,
+				7B4A73782A417831000CBBB5 /* XCRemoteSwiftPackageReference "tf_ios_module_b" */,
+				7B4A737B2A41783B000CBBB5 /* XCRemoteSwiftPackageReference "tf_ios_app_flows" */,
+				7B4A737E2A417855000CBBB5 /* XCRemoteSwiftPackageReference "tf_ios_app_assets" */,
+				7B4A73812A417887000CBBB5 /* XCRemoteSwiftPackageReference "tf_ios_module_a" */,
 			);
 			productRefGroup = 7BC8BE572A3853650062FA88 /* Products */;
 			projectDirPath = "";
@@ -410,8 +432,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BC8BE5E2A3853650062FA88 /* ViewController.swift in Sources */,
+				7B4A73852A4179A4000CBBB5 /* AppDirector.swift in Sources */,
 				7BC8BE8F2A3855AE0062FA88 /* TFAppConfig.swift in Sources */,
 				7BC8BE5A2A3853650062FA88 /* AppDelegate.swift in Sources */,
+				7B4A73872A418104000CBBB5 /* MainAppFlow.swift in Sources */,
 				7BC8BE5C2A3853650062FA88 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -756,6 +780,38 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7B4A73782A417831000CBBB5 /* XCRemoteSwiftPackageReference "tf_ios_module_b" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/acumenrev/tf_ios_module_b";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		7B4A737B2A41783B000CBBB5 /* XCRemoteSwiftPackageReference "tf_ios_app_flows" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/acumenrev/tf_ios_app_flows";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		7B4A737E2A417855000CBBB5 /* XCRemoteSwiftPackageReference "tf_ios_app_assets" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/acumenrev/tf_ios_app_assets";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		7B4A73812A417887000CBBB5 /* XCRemoteSwiftPackageReference "tf_ios_module_a" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/acumenrev/tf_ios_module_a";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		7B4EC4C92A3969EC008CFDA4 /* XCRemoteSwiftPackageReference "tf_ios_analytics" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/acumenrev/tf_ios_analytics";
@@ -767,6 +823,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7B4A73792A417831000CBBB5 /* tf_ios_module_b */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B4A73782A417831000CBBB5 /* XCRemoteSwiftPackageReference "tf_ios_module_b" */;
+			productName = tf_ios_module_b;
+		};
+		7B4A737C2A41783B000CBBB5 /* tf_ios_app_flows */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B4A737B2A41783B000CBBB5 /* XCRemoteSwiftPackageReference "tf_ios_app_flows" */;
+			productName = tf_ios_app_flows;
+		};
+		7B4A737F2A417856000CBBB5 /* TFAssets */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B4A737E2A417855000CBBB5 /* XCRemoteSwiftPackageReference "tf_ios_app_assets" */;
+			productName = TFAssets;
+		};
+		7B4A73822A417887000CBBB5 /* tf_ios_module_a */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B4A73812A417887000CBBB5 /* XCRemoteSwiftPackageReference "tf_ios_module_a" */;
+			productName = tf_ios_module_a;
+		};
 		7BF93EA32A39710E007ECDEF /* TFAnalytic */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7B4EC4C92A3969EC008CFDA4 /* XCRemoteSwiftPackageReference "tf_ios_analytics" */;
